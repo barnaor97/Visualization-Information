@@ -1,7 +1,7 @@
 """
 Medical Incident Reporting Dashboard
 =====================================
-6 visualizations with interactive features:
+visualizations with interactive features:
 - Clickable map with district filtering
 - Heatmaps, gauges, and varied chart types
 - Regulation compliance analysis
