@@ -24,9 +24,9 @@ All three scripts expect the Excel file at this path:
 ```
 
 If your file is in a different location, update the path in the script you want to run:
-- `dashboard.py` — line 25 (`DATA_PATH`)
-- `main.py` — line 24
-- `presentation_graphs.py` — line 22
+- `dashboard.py` - line 25 (`DATA_PATH`)
+- `main.py` - line 24
+- `presentation_graphs.py` - line 22
 
 ## Running the Dashboard
 
@@ -38,10 +38,10 @@ This generates all output files into the `output/` folder:
 
 | File | Description |
 |------|-------------|
-| `dashboard_shareable.html` | **Self-contained dashboard** — open this in a browser. Contains all visualizations embedded in a single file. |
+| `dashboard_shareable.html` | **Self-contained dashboard** - open this in a browser. Contains all visualizations embedded in a single file. |
 | `1_interactive_dashboard.html` | Interactive charts with dropdown filters for event type and district |
 | `2_drilldown_heatmap.html` | Heatmap with selectable axes (profession, role, event type, age, gender) |
-| `3_regulation_compliance.png` | Compliance rates — events (24h rule) vs. near-events (3-day rule) |
+| `3_regulation_compliance.png` | Compliance rates - events (24h rule) vs. near-events (3-day rule) |
 | `4_profession_delays.png` | Reporting delays broken down by profession and role |
 | `5_external_reporting.png` | External reporting requirements (legal, insurance, ministry) |
 | `6_event_types.png` | Distribution of main event types |
@@ -53,8 +53,8 @@ To view the dashboard, open `output/dashboard_shareable.html` in any web browser
 
 ## Additional Scripts
 
-- `main.py` — generates a 4-chapter presentation analysis with static charts (matplotlib/seaborn)
-- `presentation_graphs.py` — generates impact-focused presentation graphs (donut charts, statistics)
+- `main.py` - generates a 4-chapter presentation analysis with static charts (matplotlib/seaborn)
+- `presentation_graphs.py` - generates impact-focused presentation graphs (donut charts, statistics)
 
 Both scripts output charts as images via `plt.show()`.
 
@@ -62,10 +62,10 @@ Both scripts output charts as images via `plt.show()`.
 
 The Excel file (`project_data.xlsx`) should contain a sheet named `גיליון1` with the following columns:
 
-- `מקצוע המדווח (לא תפקיד)*` — reporting profession
-- `תפקיד המדווח` — reporting role
-- `מתאריך האירוע לתאריך שליחת הדיווח` — days from event to report submission
-- `מחוז*` — district
-- `סוג אירוע ראשי*` — main event type
-- `תאריך האירוע*` — event date
-- `אירוע / כמעט אירוע` — event or near-event classification
+- `מקצוע המדווח (לא תפקיד)*` - reporting profession
+- `תפקיד המדווח` - reporting role
+- `מתאריך האירוע לתאריך שליחת הדיווח` - days from event to report submission
+- `מחוז*` - district
+- `סוג אירוע ראשי*` - main event type
+- `תאריך האירוע*` - event date
+- `אירוע / כמעט אירוע` - event or near-event classification
